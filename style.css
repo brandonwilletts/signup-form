@@ -1,0 +1,165 @@
+:root {
+    --primary-clr: #596D48;
+    --text-clr: #111111;
+    --input-border-clr: #E5E7EB;
+    --input-label-clr: #454545;
+    --alert-clr: #ff0000;
+    --focus-clr: #0055bc;
+    --light-grey: #f5f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./font/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-clr);
+}
+
+/* Left Content */
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: clamp(320px, 600px, 40%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 40%);
+    margin-top: 200px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 95px;
+}
+
+.logo div {
+    color: white;
+    font-family: norse-bold, sans-serif;
+    font-size: 80pt;
+    line-height: 1;
+    margin-top: 24px;
+}
+
+.credit {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 10pt;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+.credit a {
+    color: white;
+}
+
+/* Right Content */
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    background-color: var(--light-grey);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 48px;
+}
+
+.cta-text,
+.form-heading {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+label {
+    font-size: 10pt;
+    color: var(--input-label-clr);    
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.input-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 240px;
+    border: 1.5px solid var(--input-border-clr);
+    border-radius: 4px;
+    font-size: 12pt;
+    padding: 8px;
+    margin: 0px;
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px lightgrey;
+    border: 1.5px solid var(--focus-clr);
+}
+
+.invalid {
+    border: 1.5px solid var(--alert-clr);
+}
+
+#warning {
+    color: var(--alert-clr);
+    font-size: 10pt;
+    height: 10pt;
+}
+
+button {
+    color: white;
+    background-color: var(--primary-clr);
+    box-shadow: 5px 5px 5px lightgrey;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-size: 14pt;
+    font-weight: 600;
+    width: fit-content;
+    margin: 16px 0px;
+}
+
+.text-account {
+    font-size: 14pt;
+    font-weight: 600;
+    color: var(--input-label-clr);
+}
+
+.text-account a {
+    text-decoration: none;
+    color: var(--primary-clr);
+    font-weight: 700;
+}
